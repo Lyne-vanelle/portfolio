@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lyne Vanelle Maptue Fotso – Élève ingénieure, embarqué, IoT et web</title>
+<meta name="description" content="Portfolio de Lyne Vanelle Maptue Fotso, élève ingénieure à l'ISEN Méditerranée : systèmes embarqués, IoT, développement Java / Spring Boot et React. Recherche un stage de 4 mois dès juin 2027.">
+<meta property="og:title" content="Lyne Vanelle Maptue Fotso – Du capteur à l'application">
+<meta property="og:description" content="Systèmes embarqués, IoT et développement web. Stage de 4 mois dès juin 2027, alternance dès septembre 2027.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero.jpg">
+<meta name="theme-color" content="#07111f">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="pg"></div>
+
+<nav class="nav"><div class="wrap">
+<a class="logo" href="#top">Lyne Vanelle</a>
+<a class="l" href="#vision">Vision</a><a class="l" href="#competences">Compétences</a><a class="l" href="#projets">Projets</a><a class="l" href="#parcours">Parcours</a><a class="l" href="#cv">CV</a>
+<a class="btn gold sm" href="#contact">Me contacter</a>
+</div></nav>
+
+<header class="hero" id="top">
+<canvas id="board" aria-hidden="true"></canvas>
+<div class="wrap hero-in">
+<div class="ht">
+<p class="who">Lyne Vanelle Maptue Fotso · élève ingénieure, ISEN Méditerranée</p>
+<h1>Du capteur à l'application.</h1>
+<p class="rot">Je conçois l'<b id="rot">embarqué</b></p>
+<blockquote class="quote">« Cultiver l'excellence aujourd'hui, c'est orchestrer chaque transition avec la précision d'un ingénieur et l'élégance d'une visionnaire. »</blockquote>
+<p class="status"><i></i>Stage de 4 mois dès juin 2027 · alternance dès septembre 2027 · France</p>
+<div class="cta"><a class="btn gold" href="#projets">Voir mes projets</a><a class="btn" href="cv/CV_Lyne_Vanelle_Dev_IoT.pdf" download>Télécharger mon CV</a><a class="btn" href="#contact">Me contacter</a></div>
+</div>
+</div>
+</header>
+
+<div class="marq" aria-hidden="true"><div class="mt" id="mt"></div></div>
+
+<main class="wrap">
+
+<section id="vision">
+<h2>Ma vision : orchestrer chaque transition</h2>
+<p class="sub">Chaque révolution industrielle a changé la façon de produire. Je me place à la jonction de la quatrième : là où le matériel, le logiciel et les données se rejoignent.</p>
+<div class="era" id="era">
+<button type="button" aria-pressed="false" data-i="0"><b></b>Industrie 1.0<small>1765</small></button>
+<button type="button" aria-pressed="false" data-i="1"><b></b>Industrie 2.0<small>1870</small></button>
+<button type="button" aria-pressed="false" data-i="2"><b></b>Industrie 3.0<small>1969</small></button>
+<button type="button" aria-pressed="true" data-i="3"><b></b>Industrie 4.0<small>Aujourd'hui</small></button>
+</div>
+<p id="eracap" aria-live="polite"></p>
+<canvas id="wave" class="wave" aria-hidden="true"></canvas>
+</section>
+
+<section id="competences">
+<h2>Compétences</h2>
+<p class="sub">Une chaîne complète : capteurs et firmware, services et interfaces, données et déploiement.</p>
+<div class="sk">
+<div><h3>Embarqué et IoT</h3><ul class="chips"><li>C / C++</li><li>STM32</li><li>Arduino</li><li>Pixhawk / PX4 / MAVLink</li><li>ArduPilot</li><li>VHDL</li><li>QGroundControl</li></ul></div>
+<div><h3>Logiciel et web</h3><ul class="chips"><li>Java / Spring Boot</li><li>Python</li><li>FastAPI</li><li>React</li><li>SQL / PostgreSQL</li></ul></div>
+<div><h3>Données et IA</h3><ul class="chips"><li>Pandas</li><li>XGBoost</li><li>SHAP</li><li>MLP</li><li>FFT 2D / signal</li><li>Simulation temps réel</li></ul></div>
+<div><h3>DevOps et méthode</h3><ul class="chips"><li>Linux</li><li>Git / GitHub / GitLab</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>Agile / Scrum</li></ul></div>
+<div><h3>Notions</h3><ul class="chips n"><li>Angular</li><li>.NET</li><li>Azure</li><li>Node.js</li></ul></div>
+</div>
+</section>
+
+<section id="projets">
+<h2>Projets</h2>
+<p class="sub">Ouvre un projet pour voir le problème, ma solution, mon rôle et les technologies.</p>
+<div class="filters" id="filters">
+<button type="button" aria-pressed="true" data-f="all">Tous</button><button type="button" aria-pressed="false" data-f="emb">Embarqué et IoT</button><button type="button" aria-pressed="false" data-f="soft">Logiciel</button><button type="button" aria-pressed="false" data-f="ia">Données et IA</button>
+</div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section id="parcours">
+<h2>Parcours</h2>
+<p class="sub">Formation, expériences et engagement.</p>
+<div class="two">
+<div><h4>Formation et expériences</h4>
+<ul class="tl">
+<li><span class="d">Depuis sept. 2025</span><h3>Cycle ingénieur, ISEN Méditerranée</h3><p>Systèmes numériques et IoT.</p></li>
+<li><span class="d">2024 – 2025</span><h3>Développeuse Python, Vestige (Cameroun)</h3><p>Outil d'automatisation du suivi de +150 commandes par mois.</p></li>
+<li><span class="d">2023 – 2024</span><h3>Technicienne de laboratoire, Clinique ADN</h3><p>Analyse de +15 flux de données par jour issus de dispositifs médicaux, maintenance préventive du parc matériel.</p></li>
+<li><span class="d">2020 – 2025</span><h3>Master 1 Analyse Contrôle Qualité, Licence pro. Techniques de laboratoire</h3><p>Université de Douala, Cameroun.</p></li>
+<li><span class="d">Depuis 2025</span><h3>Tutorat en mathématiques et physique</h3><p>+5 élèves accompagnés, hausse moyenne de 20 % de leurs notes.</p></li>
+</ul></div>
+<div><h4>Distinctions et engagement</h4>
+<ul class="tl">
+<li><span class="d">Nov. 2025</span><h3>Prix Coup de Cœur, Ocean Hackathon (Marine Nationale)</h3><p>Détection de pollution marine par drone, en temps réel.</p></li>
+<li><span class="d">2025 – 2026</span><h3>Prix Innovation de la DGA, Battle Boat</h3><p>Bateau autonome programmé pour une course officielle.</p></li>
+<li><span class="d">Depuis fév. 2026</span><h3>Présidente co-fondatrice, MALOMALAM</h3><p>Club d'intégration de +30 étudiants étrangers.</p></li>
+<li><span class="d">Depuis déc. 2025</span><h3>Membre, ISEN Engineering</h3><p>Pôle ingénierie de l'école.</p></li>
+<li><span class="d">Début 2026</span><h3>Formation à la création d'entreprise</h3><p>Montage d'un business plan complet.</p></li>
+</ul></div>
+</div>
+</section>
+
+<section id="cv">
+<h2>Mon CV</h2>
+<p class="sub">Version globale : développement logiciel et systèmes embarqués / IoT, sur une page.</p>
+<div class="cvbox">
+<a href="cv/CV_Lyne_Vanelle_Dev_IoT.pdf" target="_blank" rel="noopener" aria-label="Ouvrir le CV en PDF"><img src="assets/cv-preview.jpg" alt="Aperçu du CV de Lyne Vanelle Maptue Fotso" width="800" height="1035" loading="lazy"></a>
+<div>
+<p>Mes projets, mes compétences clés et mes expériences, dans le même document que celui que j'envoie aux recruteurs.</p>
+<div class="cta"><a class="btn gold" href="cv/CV_Lyne_Vanelle_Dev_IoT.pdf" download>Télécharger le CV (PDF)</a><a class="btn" href="cv/CV_Lyne_Vanelle_Dev_IoT.pdf" target="_blank" rel="noopener">Ouvrir dans le navigateur</a></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Travaillons ensemble</h2>
+<p class="sub">Je cherche un stage de 4 mois dès juin 2027, avec possibilité d'alternance dès septembre 2027. Ton message arrive directement dans ma boîte mail.</p>
+<div class="ctc">
+<form id="cf" novalidate>
+<label>Ton nom<input name="name" required minlength="2" maxlength="100" autocomplete="name"></label>
+<label>Ton email<input name="email" type="email" required maxlength="200" autocomplete="email"></label>
+<label>Ton message<textarea name="message" required minlength="10" maxlength="5000"></textarea></label>
+<div class="hp" aria-hidden="true"><label>Ne pas remplir<input name="website" tabindex="-1" autocomplete="off"></label></div>
+<button class="btn gold" type="submit" id="send">Envoyer le message</button>
+<p id="st" class="st" role="status" aria-live="polite"></p>
+</form>
+<div class="links">
+<a href="https://linkedin.com/in/lyne-vanelle-maptue-fotso" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://github.com/Lyne-vanelle" target="_blank" rel="noopener">GitHub</a>
+<span>France, mobilité nationale</span>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer><div class="wrap">Lyne Vanelle Maptue Fotso · Portfolio 2026 · Aucun message n'est enregistré sur ce site : il est transmis par email puis supprimé.</div></footer>
+
+<dialog id="dlg" aria-labelledby="dt"><button type="button" class="x" id="dx">Fermer</button><div id="db"></div></dialog>
+
+<script src="main.js" defer></script>
+</body>
+</html>

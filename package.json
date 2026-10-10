@@ -1,0 +1,8 @@
+{
+  "name": "portfolio-lyne-vanelle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio statique avec envoi d'email par fonction Netlify",
+  "engines": { "node": ">=18" },
+  "dependencies": { "nodemailer": "^6.9.16" }
+}
