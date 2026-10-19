@@ -21,16 +21,29 @@ const PROJECTS = [
     p: "Après un feu de broussailles, des poches de braises peuvent rester enfouies sous terre. La surveillance repose sur des rondes visuelles, sans mesure objective ni historique géolocalisé, et le feu peut reprendre.",
     so: "Des balises IoT déposées sur les zones brûlées mesurent la température du sol, l'humidité et le CO, et classent chaque zone en vert, jaune ou rouge. Elles transmettent leurs mesures en Wi-Fi à une plateforme web cartographique, qui conserve l'historique et déclenche une alerte quand la température et le CO dépassent leurs seuils. Prototype fonctionnel visé pour le 15 décembre 2026.",
     r: "Chef de projet et responsable de la communication hardware / software : je conçois la liaison entre les capteurs des balises et la plateforme web, et je pilote l'équipe, le cadrage et les jalons, pour les sapeurs-pompiers (SDIS, DFCI)." },
-  { t: "Garage Week · Sécurité d'une zone de tri", aw: "Avec Les Alchimistes · 1 semaine", d: "2026", c: ["emb", "ia"],
+  { t: "Garage Week · Sécurité d'une zone de tri", aw: "Avec Les Alchimistes · équipe Green Guard", d: "2026 · 1 semaine", c: ["emb", "ia"],
     s: ["Vision par IA", "Capteurs", "Contrôle d'accès", "Barrière motorisée"],
+    img: [["assets/garage-week-equipe.jpg", "L'équipe Green Guard et son prototype de barrière à la Garage Week 2026", "center 60%"],
+          ["assets/garage-week-alchimistes.jpg", "Lancement de la Garage Week 2026 sur le site des Alchimistes, en équipements de sécurité"]],
     p: "Une zone de tri où 2 employés avaient déjà chuté, avec un risque de chute de poubelle sur la tête.",
     so: "Détection par IA du port des EPI (casque, gants, visière) : s'ils sont portés, l'accès est autorisé et le voyant passe au vert ; sinon, voyant rouge et blocage. Une barrière motorisée miniature ne s'ouvre que si la trieuse est à l'arrêt et la poubelle à moins de 1 m du sol.",
     r: "Conception et prototypage du système en équipe, en une semaine." },
-  { t: "TetraTHON", aw: "Hackathon Franco-Indien · 36 h", d: "Août 2026", c: ["ia", "soft"],
+  { t: "MALOMALAM · Écho des cultures", aw: "Présidente co-fondatrice", d: "Depuis fév. 2026", c: ["eng"],
+    s: ["Leadership", "Organisation d'événements", "Communication", "Gestion d'équipe"],
+    img: [["assets/echo-cultures-groupe.jpg", "Membres et invités de l'événement Écho des cultures à l'ISEN", "center 45%"],
+          ["assets/echo-cultures-presentation.jpg", "Lyne présente l'Écho des cultures devant les étudiants de l'ISEN"],
+          ["assets/echo-cultures-atelier.jpg", "Atelier de peinture collective pendant l'Écho des cultures"],
+          ["assets/echo-cultures-drapeau.jpg", "Lyne avec le drapeau du Cameroun devant le mur des pays"]],
+    p: "Les étudiants étrangers qui arrivent à Toulon manquent de repères et de liens avec les autres étudiants.",
+    so: "Un club qui accompagne l'intégration de +30 étudiants étrangers, avec des événements comme l'Écho des cultures à l'ISEN : présentation des pays, mur de photos, atelier de peinture collective.",
+    r: "Présidente et co-fondatrice : je pilote le bureau, organise les événements et anime les présentations." },
+  { t: "TetraTHON", aw: "Sprint IA franco-indien · 36 h · Vadodara (Inde)", d: "31 juil. – 2 août 2026", c: ["ia", "soft"],
     s: ["FastAPI", "XGBoost", "SHAP", "React", "SQL", "GitHub"],
+    img: [["assets/tetrathon-certificat.jpg", "Certificat de participation au TetraTHON 2026, Navrachana University et ISEN Méditerranée", "center top"],
+          ["assets/tetrathon-video.jpg", "Présentation vidéo de Lyne projetée pendant le TetraTHON"]],
     p: "Détection tardive des maladies et mauvaise orientation des patients.",
     so: "Assistant IA de prédiction diagnostique (diabète, hypertension…) atteignant +80 % de précision, entraîné sur +1000 données patients simulées, avec des prédictions expliquées par SHAP.",
-    r: "Scrum Master de l'équipe et développeuse backend." },
+    r: "Scrum Master de l'équipe et développeuse backend, lors d'un sprint organisé par la Navrachana University avec l'ISEN Méditerranée." },
   { t: "Happy Bite", aw: "Projet personnel", d: "2026", c: ["ia", "soft"],
     s: ["IA générative", "RAG", "LLM", "Python"],
     p: "Les réponses d'un assistant d'IA générative ne sont pas toujours fiables ni ancrées dans une source.",
@@ -43,21 +56,29 @@ const PROJECTS = [
     r: "Conception et développement de la chaîne complète." },
   { t: "Battle Boat", aw: "Prix Innovation de la DGA", d: "Déc. 2025 – Mai 2026", c: ["emb"],
     s: ["Pixhawk", "Arduino", "Python", "C++", "MAVLink"],
+    img: [["assets/dga-ceremonie.jpg", "Remise du Prix Innovation de la DGA à l'équipe Battle Boat, à Toulon", "center 75%"],
+          ["assets/dga-trophee.jpg", "Trophée du Ministère des Armées, Direction générale de l'armement"]],
     p: "Programmer un bateau autonome pour enchaîner 2 modes d'une course officielle.",
     so: "Architecture logicielle embarquée PX4/Arduino, traitement bas niveau (ESC, servomoteurs) et traitement temps réel de +2 capteurs en Python. Résultat : 80 % d'autonomie en attaque et en défense.",
     r: "Développement de l'architecture logicielle embarquée et du traitement des capteurs." },
-  { t: "Ocean Hackathon 2025", aw: "Prix Coup de Cœur · Marine Nationale", d: "Nov. 2025 · hackathon", c: ["ia", "soft"],
+  { t: "NEREI · Ocean Hackathon 2025", aw: "Prix Coup de Cœur · Marine Nationale", d: "Oct. 2025 · 9e édition, Toulon", c: ["ia", "soft"],
     s: ["Python", "Simulation", "Données météo temps réel", "Data"],
-    p: "Surveiller les pollutions côtières pour éclairer la décision écologique.",
+    img: [["assets/ocean-2025-nerei.jpg", "Diapositive de titre du projet NEREI : anticiper et organiser une réponse face à une pollution des océans", "center 70%"],
+          ["assets/ocean-2025-resultats.jpg", "Annonce des résultats de l'Ocean Hackathon 2025 à Toulon"],
+          ["assets/ocean-2025-podium.jpg", "Équipes primées et jury de la 9e édition de l'Ocean Hackathon"]],
+    p: "Anticiper et organiser une réponse face à une pollution des océans, pour éclairer la décision écologique.",
     so: "Simulation d'un drone de surveillance de la pollution marine, alimentée par des données météo réelles traitées en temps réel.",
     r: "Traitement des données météo en temps réel et intégration dans la simulation." },
   { t: "Act In Space", aw: "Airbus Defence and Space", d: "Projet en équipe de 4", c: ["emb", "soft"],
     s: ["Python", "Simulation temps réel"],
+    img: [["assets/act-in-space-fusee.jpg", "Lyne à son poste de travail pendant Act In Space, schéma de l'architecture au tableau", "center 40%"],
+          ["assets/act-in-space-yoga.jpg", "Pause yoga entre deux sessions de travail à Act In Space"]],
     p: "Simuler la détection d'un objet dans une zone de 20 km autour d'un satellite et déclencher une réponse.",
     so: "Calcul cinématique temps réel de la position du satellite en Python, pour une simulation physique réaliste.",
     r: "Développement du calcul cinématique en Python." },
   { t: "Suivi de gestion, Vestige", aw: "Expérience professionnelle", d: "2024 – 2025", c: ["soft"],
     s: ["Python", "Pandas", "Openpyxl", "Excel"],
+    img: [["assets/vestige.jpg", "Lyne au travail sur son ordinateur dans les locaux de Vestige", "center 35%"]],
     p: "Absence d'outil centralisé pour le suivi des commandes, livraisons et indicateurs de rentabilité.",
     so: "Scripts Python et Excel automatisant le suivi de +150 commandes par mois, réduisant les erreurs de 30 % et calculant les KPI financiers.",
     r: "Conception et développement de l'outil." }
@@ -75,14 +96,14 @@ function openProject(x) {
   [["Problème", x.p], ["Solution", x.so], ["Mon rôle", x.r]].forEach(([k, v]) => dl.append(el("dt", null, k), el("dd", null, v)));
   const u = chips(x.s); u.style.marginTop = "18px";
   dbody.append(dl, u);
-  if (x.img) { const g = el("div", "gal"); x.img.forEach(([s, a]) => g.append(pic(s, a, false))); dbody.append(g); }
+  if (x.img) { const g = el("div", "gal"); x.img.forEach(([s, a]) => { const f = el("figure"); f.append(pic(s, a, false), el("figcaption", null, a)); g.append(f); }); dbody.append(g); }
   dlg.showModal();
 }
 function renderProjects(f) {
   grid.replaceChildren();
   PROJECTS.filter(x => f === "all" || x.c.includes(f)).forEach((x, i) => {
     const b = el("button", "card"); b.type = "button"; b.dataset.c = x.c[0]; b.style.animationDelay = i * 70 + "ms";
-    if (x.img) { const th = el("div", "th"); th.append(pic(x.img[0][0], x.img[0][1], true)); b.append(th); }
+    if (x.img) { const th = el("div", "th"), im = pic(x.img[0][0], x.img[0][1], true); if (x.img[0][2]) im.style.objectPosition = x.img[0][2]; th.append(im); b.append(th); }
     b.append(el("h3", null, x.t), el("div", "meta", x.d));
     if (x.aw) b.append(el("div", "award", x.aw));
     b.append(el("p", null, x.p), chips(x.s));
@@ -106,7 +127,7 @@ $("#filters").addEventListener("click", e => {
 renderProjects("all");
 
 /* ---------- Bandeau de technologies ---------- */
-const TECH = ["Java / Spring Boot", "STM32", "Python", "FreeRTOS", "React", "Wi-Fi", "C / C++", "FastAPI", "ESP32", "BLE", "Docker", "XGBoost", "RAG", "PX4 / MAVLink", "Git / GitHub", "Linux", "SQL / PostgreSQL", "Kubernetes", "UART / SPI / CAN"];
+const TECH = ["Java / Spring Boot", "STM32", "Python", "FreeRTOS", "React", "Wi-Fi", "C / C++", "FastAPI", "ESP32", "BLE", "Docker", "XGBoost", "RAG", "PX4 / MAVLink", "Git / GitHub", "Linux", "SQL / PostgreSQL", "Kubernetes", "UART / SPI / CAN / I2C"];
 const mt = $("#mt"); [...TECH, ...TECH].forEach(t => mt.append(el("span", null, t)));
 
 /* ---------- Frise Industrie 1.0 → 4.0 ---------- */
